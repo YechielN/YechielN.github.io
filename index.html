@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style1.css">
+  <title>Maharsha Timetables</title>
+  <link rel="shortcut icon" href="assets/images/maharsha_logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">Maharsha Timetables</div>
+    <div class="item holder"><a href="https://yechieln.github.io/MaharshaG7B" style="color: black;" target="_blank"><img src="assets/images/G7.png" alt="Grade 7" style="height: 100%;" style="width: 100%;height: auto;" class="item img"></a></div>
+    <div class="item holder"><a href="https://yechieln.github.io/MaharshaG8B" style="color: black;" target="_blank"><img src="assets/images/G8.png" alt="Grade 8" style="height: 100%;" style="width: 100%;height: auto;" class="item img"></a></div>
+    <div class="item holder"><a href="https://yechieln.github.io/MaharshaG9B" style="color: black;" target="_blank"><img src="assets/images/G9.png" alt="Grade 9" style="height: 100%;" style="width: 100%;height: auto;" class="item img"></a></div>
+    <div class="item item5"><a href="https://yechieln.github.io/MaharshaG7B" style="color: black;" target="_blank" class="item8">Grade 7</a></div>
+    <div class="item item6"><a href="https://yechieln.github.io/MaharshaG8B" style="color: black;" target="_blank" class="item8">Grade 8</a></div>
+    <div class="item item7"><a href="https://yechieln.github.io/MaharshaG9B" style="color: black;" target="_blank" class="item8">Grade 9</a></div>
+  </div>
+
+  <style>
+    .container {
+      display: grid;
+      height: fit-content;
+      grid-template-columns: repeat(3, 1fr);
+      /*grid-template-rows: repeat(3, 1fr);*/
+      border: none;
+    }
+    .item {
+      /*grid-column: span 2;
+      grid-row: span 2;*/
+      border-width: 1px;
+      border-color: #000000;
+      background-color: transparent;
+      place-self: center;
+      border: none;
+      grid-gap: 10px;
+      padding: 2.5px;
+    }
+    .item1 {
+      grid-column: 1/-1;
+    }
+    .holder {   
+  width: 1fr 1fr 1fr;
+  /*display: block;*/
+}
+.img {
+  width: 100%;
+  height: auto;    
+}
+.item8:hover{
+  animation-name: blue;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  /*background-color: #FF2100;*/
+  text-shadow: 4px 4px 5px #ff2100, -4px -4px 5px #ff2100, 4px -4px 5px #ff2100, -4px 4px 5px #ff2100;
+}
+@keyframes blue {
+  0% {
+    color: #00DEFF;
+  }
+  100% {
+    color: #00DEFF;
+}
+}
+a:hover {
+  transform: scale(1.1);
+}
+  </style>
+</body>
+  
+</html>
