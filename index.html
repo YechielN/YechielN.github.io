@@ -10,18 +10,117 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="item item1">Maharsha Timetables</div>
-    <div class="item holder"><a href="https://yechieln.github.io/MaharshaG7B" style="color: black;" target="_blank"><img src="assets/images/NewG7.png" alt="Grade 7" style="height: 100%;" style="width: 100%;height: auto;" class="item img"></a></div>
-    <div class="item holder"><a href="https://yechieln.github.io/MaharshaG8B" style="color: black;" target="_blank"><img src="assets/images/NewG8W.png" alt="Grade 8" style="height: 100%;" style="width: 100%;height: auto;" class="item img"></a></div>
-    <div class="item holder"><a href="https://yechieln.github.io/MaharshaG9B" style="color: black;" target="_blank"><img src="assets/images/NewG9.png" alt="Grade 9" style="height: 100%;" style="width: 100%;height: auto;" class="item img"></a></div>
+  <div class="container1">
+    <div class="item item1"><h1>Maharsha Timetables</h1></div>
+    <div class="item holder">
+      <center>
+      <div class="container">
+        <div class="spaceWrap">
+          <iframe class="viewPort" src="https://yechieln.github.io/MaharshaG7B">
+          </iframe>
+        </div>
+        <div class="overlay">
+        <a href="https://yechieln.github.io/MaharshaG7B" target="_blank" class="icon">
+        <i class="fa fa-bars" style="font-size: 20px;">Grade 7</i>
+        </a>
+        </div>
+      </div>
+      </center>
+    </div>
+    <div class="item holder">
+      <center>
+        <div class="container">
+          <div class="spaceWrap">
+            <iframe class="viewPort" src="https://yechieln.github.io/MaharshaG8B">
+            </iframe>
+          </div>
+          <div class="overlay">
+          <a href="https://yechieln.github.io/MaharshaG8B" target="_blank" class="icon">
+          <i class="fa fa-bars" style="font-size: 20px;">Grade 8</i>
+          </a>
+          </div>
+        </div>
+        </center>
+    </div>
+    <div class="item holder">
+      <center>
+        <div class="container">
+          <div class="spaceWrap">
+            <iframe class="viewPort" src="https://yechieln.github.io/MaharshaG9B">
+            </iframe>
+          </div>
+          <div class="overlay">
+          <a href="https://yechieln.github.io/MaharshaG9B" target="_blank" class="icon">
+          <i class="fa fa-bars" style="font-size: 20px;">Grade 9</i>
+          </a>
+          </div>
+        </div>
+        </center>
+    </div>
     <div class="item item5"><a href="https://yechieln.github.io/MaharshaG7B" style="color: black;" target="_blank" class="item8">Grade 7</a></div>
     <div class="item item6"><a href="https://yechieln.github.io/MaharshaG8B" style="color: black;" target="_blank" class="item8">Grade 8</a></div>
     <div class="item item7"><a href="https://yechieln.github.io/MaharshaG9B" style="color: black;" target="_blank" class="item8">Grade 9</a></div>
   </div>
 
   <style>
-    .container {
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #00ffea81;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: blue;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .spaceWrap { 
+  width: 400px; 
+  height: 225px; 
+  padding: 0; 
+  overflow: hidden; 
+}
+
+.viewPort { 
+  width: 1600px; 
+  height: 900px; 
+  border: 1px solid black;
+}
+
+.viewPort {
+    -webkit-transform: scale(0.25);
+    -webkit-transform-origin: 0 0;
+}
+  
+
+
+
+    .container1 {
       display: grid;
       height: fit-content;
       grid-template-columns: repeat(3, 1fr);
@@ -69,7 +168,7 @@
     color: #00DEFF;
 }
 }
-a:hover {
+.item5:hover {
   transform: scale(1.1);
 }
   </style>
