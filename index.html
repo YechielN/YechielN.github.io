@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="assets/style1.css">
   <title>Maharsha Timetables</title>
   <link rel="shortcut icon" href="assets/images/maharsha_logo.png" type="image/x-icon">
+  <script>
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+  </script>
 </head>
 
 <body>
@@ -61,7 +70,6 @@
     <div class="item item6"><a href="https://yechieln.github.io/MaharshaG8B" style="color: black;" target="_blank" class="item8">Grade 8</a></div>
     <div class="item item7"><a href="https://yechieln.github.io/MaharshaG9B" style="color: black;" target="_blank" class="item8">Grade 9</a></div>
   </div>
-  <iframe src="plz-work.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
   <audio autoplay loop>
     <source src="plz-work.mp3" type="audio/mpeg">
     <embed src="plz-work.mp3" autostart="true" loop="true" hidden="true"> 
