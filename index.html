@@ -70,7 +70,7 @@
     <div class="item item6"><a href="https://yechieln.github.io/MaharshaG8B" style="color: black;" target="_blank" class="item8">Grade 8</a></div>
     <div class="item item7"><a href="https://yechieln.github.io/MaharshaG9B" style="color: black;" target="_blank" class="item8">Grade 9</a></div>
   </div>
-  <audio autoplay loop>
+  <audio autoplay loop id="myaudio">
     <source src="plz-work.mp3" type="audio/mpeg">
     <embed src="plz-work.mp3" autostart="true" loop="true" hidden="true"> 
   </audio>
@@ -197,6 +197,11 @@
   transform: scale(1.1);
 }
   </style>
+  
+<script>
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.4;
+</script>
 </body>
   
 </html>
