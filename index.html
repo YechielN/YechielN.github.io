@@ -70,10 +70,7 @@
     <div class="item item6"><a href="https://yechieln.github.io/MaharshaG8B" style="color: black;" target="_blank" class="item8">Grade 8</a></div>
     <div class="item item7"><a href="https://yechieln.github.io/MaharshaG9B" style="color: black;" target="_blank" class="item8">Grade 9</a></div>
   </div>
-  <audio autoplay loop id="myaudio">
-    <source src="plz-work.mp3" type="audio/mpeg">
-    <embed src="plz-work.mp3" autostart="true" loop="true" hidden="true"> 
-  </audio>
+  
 
   <style>
 
@@ -205,7 +202,7 @@
 </body>
   
 </html>
-<strong><center><!DOCTYPE html>
+<center><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -223,6 +220,14 @@
         <option value="4">4</option>
         <option value="5">5</option>
     </select>
+    <style>
+      option {
+        color: #ff2100;
+        background: #0012ff;
+        font-family: cursive;
+        font-weight: bolder;
+      }
+    </style>
 
     <br>
     <span>Positions evaluated: <span id="position-count"></span></span>
@@ -242,8 +247,31 @@
 <script>
 
 </script>
+<style>
+  body {
+    font-size: large;
+    font-weight: lighter;
+  }
+</style>
 </body>
-</html></center></strong>
+</html></center>
+<audio controls autoplay loop id="myaudio">
+  <source src="plz-work.mp3" type="audio/mpeg">
+  <embed src="plz-work.mp3" autostart="true" loop="true" hidden="true"> 
+</audio>
+<style>
+  audio {
+    width: 100%;
+  }
+     audio::-webkit-media-controls-panel {
+     background: linear-gradient(110deg, #00ff00, #00ffdd, #0084ff, #4c00ff, #b700ff, #ff006a, #ff0000);
+     }
+     audio::-webkit-media-controls-current-time-display,
+     audio::-webkit-media-controls-time-remaining-display {
+       color: rgb(255, 0, 242);
+       font-weight: bolder;
+     }
+</style>
 
 
 <!--<!DOCTYPE html>
