@@ -37,10 +37,12 @@ body {
 /* Changing the font sizes to suitable ones */
 .now-playing { 
   font-size: 1rem; 
+  margin-bottom: 40px;
 } 
   
 .track-name { 
   font-size: 3rem; 
+  margin-top: 40px;
 } 
   
 .track-artist { 
@@ -114,10 +116,14 @@ body {
   
 .seek_slider { 
   width: 60%; 
+  margin-top: 40px;
+  margin-bottom: 40px;
 } 
   
 .volume_slider { 
   width: 30%; 
+  margin-top: 40px;
+  margin-bottom: 40px;
 } 
   
 .current-time, 
