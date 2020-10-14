@@ -256,6 +256,15 @@ function loadTrack(track_index) {
     // Replace icon with the play icon 
     playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';; 
   } 
+  var curr_track1=document.getElementById('playpause-track');
+
+   document.body.onkeypress = function(e){
+   if(e.which == 32){  
+ // stops default behaviour of space bar. Stop page scrolling down
+ if (!isPlaying) playTrack(); 
+ else pauseTrack(); 
+  }
+} 
     
   function nextTrack() { 
     // Go back to the first track if the 
