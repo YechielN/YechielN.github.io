@@ -13,6 +13,7 @@ let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider"); 
 let curr_time = document.querySelector(".current-time"); 
 let total_duration = document.querySelector(".total-duration"); 
+let site_name = document.querySelector(".title");
   
 // Specify globally used values 
 let track_index = 0; 
@@ -196,6 +197,7 @@ function loadTrack(track_index) {
     track_artist.textContent = track_list[track_index].artist; 
     now_playing.textContent =  
        "PLAYING " + (track_index + 1) + " OF " + track_list.length;
+       site_name.textContent = "Music Player: Now Playing: " + track_list[track_index].name;
     
     // Set an interval of 1000 milliseconds 
     // for updating the seek slider 
