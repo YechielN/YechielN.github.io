@@ -62,7 +62,7 @@ let track_list = [
     name: "ivdu", 
     artist: "Mordechai Shapiro", 
     image: "Kol-Haderech.png", 
-    path: "https://mordechaishapiro.com/musicfiles/kolhaderech/06-Ivdu.mp3", 
+    path: baseUrl + "06-Ivdu.mp3", 
   }, 
   { 
     name: "Hayom", 
